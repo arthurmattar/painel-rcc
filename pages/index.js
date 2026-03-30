@@ -299,17 +299,17 @@ export default function Home() {
             {tab === 0 && (
               <div>
                 <p style={{ color: "#555", fontSize: "10px", marginBottom: "8px" }}>
-                  {WEEKS.length} semanas | clique nos cabeçalhos para ordenar
+                  Últimas 6 semanas | clique nos cabeçalhos para ordenar
                 </p>
-                <DataTable map={trMap} weeks={WEEKS} isTR={true} />
+                <DataTable map={trMap} weeks={LAST6} isTR={true} />
               </div>
             )}
             {tab === 1 && (
               <div>
                 <p style={{ color: "#555", fontSize: "10px", marginBottom: "8px" }}>
-                  {WEEKS.length} semanas | clique nos cabeçalhos para ordenar
+                  Últimas 6 semanas | clique nos cabeçalhos para ordenar
                 </p>
-                <DataTable map={colMap} weeks={WEEKS} isTR={false} />
+                <DataTable map={colMap} weeks={LAST6} isTR={false} />
               </div>
             )}
             {tab === 2 && (
